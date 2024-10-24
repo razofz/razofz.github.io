@@ -1,0 +1,171 @@
+---
+import PageLayout from '@/layouts/BaseLayout.astro'
+import ToolSection from '@/components/ToolSection.astro'
+import Button from '@/components/Button.astro'
+
+const PROGRAMMING = [
+	{
+		name: 'Python',
+		description: '',
+		href: 'https://www.python.org/',
+		iconPath: 'python',
+		iconBgColour: '#000001'
+	},
+	{
+		name: 'R',
+		description: '',
+		href: 'https://www.r-project.org/',
+		iconPath: 'r',
+		iconBgColour: '#FFFFFF'
+	},
+	{
+		name: 'Java',
+		description: '',
+		href: 'https://www.java.com/en/',
+		iconPath: 'java',
+		iconBgColour: '#000001'
+	}
+]
+
+const PRODUCTIVITY = [
+	{
+		name: 'Vivaldi',
+		description: 'Browser',
+		href: 'https://vivaldi.com/',
+		iconPath: 'vivaldi'
+		// iconBgColour: '#000001'
+	},
+	{
+		name: 'Alfred',
+		description: 'Application launcher',
+		href: 'https://www.alfredapp.com/',
+		iconPath: 'alfred',
+		iconBgColour: '#EFEFEE'
+	},
+	{
+		name: 'Obsidian',
+		description: 'Note-taking & knowledge management',
+		href: 'https://obsidian.md/',
+		iconPath: 'obsidian',
+		iconBgColour: '#7A3EE8'
+	},
+	{
+		name: 'Hookmark',
+		description: 'Linking everything (files, websites, projects in programs etc)',
+		href: 'https://hookproductivity.com/',
+		iconPath: 'Cog',
+		iconBgColour: '#7A3EE8'
+	}
+]
+
+const DEVELOPMENT = [
+	{
+		name: 'VS Code',
+		description: 'IDE',
+		href: 'https://code.visualstudio.com/',
+		iconPath: 'vscode',
+		iconBgColour: '#2C2C32'
+	},
+	{
+		name: 'Vim',
+		description: 'Editor',
+		href: 'https://github.com/vim/vim',
+		iconPath: 'vim',
+		iconBgColour: '#2C2C32'
+	},
+	{
+		name: 'tmux',
+		description: 'Terminal multiplexer',
+		href: 'https://github.com/vim/vim',
+		iconPath: 'tmux2',
+		iconBgColour: '#2C2C32'
+	},
+	{
+		name: 'Jupyter',
+		description: 'Notebooks, Dev environment',
+		href: 'https://jupyter.org',
+		iconPath: 'jupyter-v2',
+		iconBgColour: '#2C2C32'
+	},
+	{
+		name: 'iTerm2',
+		description: 'Terminal emulator',
+		href: 'https://iterm2.com/',
+		iconPath: 'iterm',
+		iconBgColour: '#EFEFEE'
+	},
+	{
+		name: 'conda',
+		description: 'Package manager',
+		href: 'https://docs.conda.io/en/latest/',
+		iconPath: 'conda',
+		iconBgColour: '#06A67F'
+	},
+	// {
+	// 	name: 'SQL',
+	// 	description: 'Query language',
+	// 	href: 'https://en.wikipedia.org/wiki/SQL',
+	// 	iconPath: 'sql',
+	// 	iconBgColour: '#06A67F'
+	// },
+	{
+		name: 'Docker',
+		description: 'Container technology',
+		href: 'https://www.docker.com/',
+		iconPath: 'docker',
+		iconBgColour: '#06A67F'
+	},
+	{
+		name: 'Snakemake',
+		description: 'Workflow management system',
+		href: 'https://snakemake.readthedocs.io/en/stable/',
+		iconPath: 'snakemake',
+		iconBgColour: '#06A67F'
+	},
+	{
+		name: 'git',
+		description: 'Version control system',
+		href: 'https://git-scm.com/',
+		iconPath: 'git',
+		iconBgColour: '#06A67F'
+	},
+	{
+		name: 'Linux',
+		description: 'Operating system',
+		href: 'https://www.wikiwand.com/en/articles/Linux',
+		iconPath: 'linux',
+		iconBgColour: '#06A67F'
+	}
+]
+---
+
+<PageLayout meta={{ title: 'Home' }}>
+	<div class='w-full'>
+		<Button title='Back' href='/' style='button'>
+			<svg
+				xmlns='http://www.w3.org/2000/svg'
+				width='14'
+				height='14'
+				viewBox='0 0 24 24'
+				slot='icon-before'
+			>
+				<path
+					fill='currentColor'
+					d='m6.921 12.5l5.792 5.792L12 19l-7-7l7-7l.713.708L6.921 11.5H19v1z'
+				>
+				</path>
+			</svg>
+		</Button>
+
+		<div class='mt-5 flex w-full flex-col gap-y-10'>
+			<div>
+				<h1 class='mb-1 text-2xl font-bold'>Tools</h1>
+				<p>Tools and software I use</p>
+			</div>
+
+			<ToolSection title='Programming languages' tools={PROGRAMMING} />
+			<ToolSection title='Development' tools={DEVELOPMENT} />
+			<ToolSection title='Productivity' tools={PRODUCTIVITY} />
+		</div>
+	</div>
+</PageLayout>

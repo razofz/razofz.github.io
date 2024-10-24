@@ -1,0 +1,49 @@
+title: "Hello"
+description: "something fitting here"
+about_me: > 
+  ICT engineer transitioning into a data engineer with a side of data scientist.
+  Currently working as a bioinformatician at Lund University.
+  Enjoys ensuring reproducibility and scalability, making order from chaos
+  and finding ways to explain complex concepts in simple terms.
+  Outside of data work a musician in a number of band and orchestras,
+  and has too many hobbies: 3D printing, board games, leatherworking,
+  tabletop RPGs, knitting, playing squash, running, and many more.
+  Loves to dig deep in new fields and soak up knowledge.
+fullname: "Rasmus Olofzon"
+languages: 
+  - "Swedish"
+  - "English"
+  - "Spanish (rudimentary)"
+programming_languages: 
+  - "Python"
+  - "R"
+  - "Java"
+  - "C#"
+  - "Javascript"
+  - "C++"
+markup_languages: 
+  - "HTML"
+  - "YAML"
+  - "JSON"
+  - "SQL"
+  - "HDF5"
+data_tools: 
+  - "Snakemake"
+  - "Seurat"
+  - "git"
+  - "notebooks"
+  # - "dagster"
+  # - "dbt"
+misc_skills: 
+  - "Software development"
+  - "Database mgmnt & theory"
+  - "Web development"
+  - "Software testing"
+  - "OOP"
+  - "Functional programming"
+  - "vim"
+  - "tmux"
+  - "cli tools"
+linkedin_username: "rasmusolofzon"
+github_username: "razofz"
+orcid: "0000-0001-8079-8718"
