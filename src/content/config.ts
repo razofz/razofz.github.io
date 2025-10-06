@@ -43,6 +43,7 @@ const infoCollection = defineCollection({
 		programming_languages: z.array(z.string()),
 		markup_languages: z.array(z.string()),
 		data_tools: z.array(z.string()),
+		frameworks: z.array(z.string()),
 		misc_skills: z.array(z.string()),
 		linkedin_username: z.string(),
 		github_username: z.string(),
